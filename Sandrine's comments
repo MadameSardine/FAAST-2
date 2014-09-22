@@ -1,0 +1,14 @@
+## Proposed changes:
+
+* Refactor code further by creating a module for characteristics shared by station, coach and station (can have passengers).
+* In station specs, instead of writing doubles for each test, write once below "describe Station do" in the let() format.
+
+## Other questions / comments:
+
+* Could define Train so that a new instance is created with at least one coach (or a pre-determined number of coaches
+instead of having to load new coaches and risking errors if there is no coach).
+* Passengers know whether they are in a station or not but they don't know in which station they are. Could be relevant
+if they have to travel from a station to another.
+* Coaches should let passenger off and board only if the train is stopped at a station.
+* train.travel(nil, station) ==> what is nil? 
+* Could set a maximum capacity for station.
